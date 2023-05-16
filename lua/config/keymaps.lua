@@ -6,4 +6,15 @@ local opts = { noremap = true, silent = true }
 
 local keymap = vim.keymap.set
 
-keymap("i", "jj", "<Esc>", { silent = true })
+keymap("i", "jj", "<Esc>", opts)
+
+keymap("n", "<leader>o", function()
+  if vim.bo.filetype == "neo-tree" then
+    vim.cmd.wincmd("p")
+  else
+    vim.cmd.Neotree("focus")
+  end
+end, {
+
+  desc = "Focus Neo Tree",
+})
