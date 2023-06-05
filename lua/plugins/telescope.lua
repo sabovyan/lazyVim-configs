@@ -9,6 +9,16 @@ return {
 
   keys = {
     { "<leader>fR", "<cmd>Telescope lsp_references<cr>", desc = "find references" },
+    {
+      "<leader>fg",
+      ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
+      desc = "Find Text Pattern In All Files",
+    },
+    {
+      "<leader>fs",
+      "<cmd>Telescope spell_suggest<CR>",
+      desc = "Spell",
+    },
   },
 
   config = function()
