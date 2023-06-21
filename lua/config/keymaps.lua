@@ -8,6 +8,13 @@ local keymap = vim.keymap.set
 
 keymap("i", "jj", "<Esc>", opts)
 
+-- to keei the cursor centered
+keymap("n", "<C-d>", "<C-d>zz", opts)
+keymap("n", "<C-u>", "<C-u>zz", opts)
+
+-- to keep last copied text and not deleted one
+keymap("x", "<leader>p", '"_dP', opts)
+
 keymap("n", "<leader>o", function()
   if vim.bo.filetype == "neo-tree" then
     vim.cmd.wincmd("p")
