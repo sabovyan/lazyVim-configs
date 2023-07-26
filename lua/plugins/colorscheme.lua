@@ -1,20 +1,28 @@
 return {
-  "neanias/everforest-nvim",
-  version = false,
-  lazy = false,
-  priority = 1000, -- make sure to load this before all the other start plugins
-  -- Optional; default configuration will be used if setup isn't called.
+  "navarasu/onedark.nvim",
+  priority = 1000,
   config = function()
-    require("everforest").setup({
-      -- Your config here
-      background = "hard",
-      transparent_background_level = 1,
-      italics = true,
-    })
-
-    vim.cmd([[colorscheme everforest]])
+    -- somewhere in your config:
+    vim.cmd("colorscheme onedark")
   end,
 }
+-- return {
+--   "neanias/everforest-nvim",
+--   version = false,
+--   lazy = false,
+--   priority = 1000, -- make sure to load this before all the other start plugins
+--   -- Optional; default configuration will be used if setup isn't called.
+--   config = function()
+--     require("everforest").setup({
+--       -- Your config here
+--       background = "hard",
+--       transparent_background_level = 1,
+--       italics = true,
+--     })
+--
+--     vim.cmd([[colorscheme everforest]])
+--   end,
+-- }
 
 -- return {
 --
