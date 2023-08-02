@@ -1,11 +1,11 @@
-return {
-  "navarasu/onedark.nvim",
-  priority = 1000,
-  config = function()
-    -- somewhere in your config:
-    vim.cmd("colorscheme onedark")
-  end,
-}
+-- return {
+--   "navarasu/onedark.nvim",
+--   priority = 1000,
+--   config = function()
+--     -- somewhere in your config:
+--     vim.cmd("colorscheme onedark")
+--   end,
+-- }
 -- return {
 --   "neanias/everforest-nvim",
 --   version = false,
@@ -33,12 +33,12 @@ return {
 --   end,
 -- }
 
--- return {
---   "sainnhe/gruvbox-material",
---   config = function()
---     vim.cmd([[colorscheme gruvbox-material]])
---   end,
--- }
+return {
+  "sainnhe/gruvbox-material",
+  config = function()
+    vim.cmd([[colorscheme gruvbox-material]])
+  end,
+}
 
 -- return {
 --   "savq/melange-nvim",
