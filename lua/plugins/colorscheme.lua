@@ -1,3 +1,4 @@
+return {}
 -- return {
 --   "navarasu/onedark.nvim",
 --   priority = 1000,
@@ -32,13 +33,25 @@
 --     vim.cmd([[colorscheme everforest]])
 --   end,
 -- }
+-- return {
+--   -- add gruvbox
+--   { "ellisonleao/gruvbox.nvim" },
+--
+--   -- Configure LazyVim to load gruvbox
+--   {
+--     "LazyVim/LazyVim",
+--     opts = {
+--       colorscheme = "gruvbox",
+--     },
+--   },
+-- }
 
-return {
-  "sainnhe/gruvbox-material",
-  config = function()
-    vim.cmd([[colorscheme gruvbox-material]])
-  end,
-}
+-- return {
+--   "sainnhe/gruvbox-material",
+--   config = function()
+--     vim.cmd([[colorscheme gruvbox-material]])
+--   end,
+-- }
 
 -- return {
 --   "savq/melange-nvim",
@@ -70,7 +83,6 @@ return {
 --       },
 --       color_overrides = {
 --         mocha = {
---           rosewater = "#EA6962",
 --           flamingo = "#EA6962",
 --           pink = "#D3869B",
 --           mauve = "#D3869B",
