@@ -33,3 +33,15 @@ end, {
 
   desc = "Focus Neo Tree",
 })
+
+keymap("n", "<leader>to", "<cmd>split | resize 20 | term <CR>", {
+  noremap = true,
+  silent = true,
+  desc = "open terminal",
+})
+
+keymap("n", "<leader>tc", "<cmd><ESC> <C-w>:q!<CR>", {
+  noremap = true,
+  silent = true,
+  desc = "open terminal",
+})
