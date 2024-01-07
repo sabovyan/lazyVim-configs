@@ -4,3 +4,5 @@
 
 vim.opt.conceallevel = 0
 vim.opt.colorcolumn = "79"
+
+vim.opt.foldmethod = "manual"
