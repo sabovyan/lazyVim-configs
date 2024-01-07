@@ -18,6 +18,11 @@ return {
       "<cmd>Telescope spell_suggest<CR>",
       desc = "Spell",
     },
+    {
+      "<leader>gc",
+      "<cmd>Telescope git_bcommits<CR>",
+      desc = "Current Buffer history",
+    },
   },
 
   config = function()
@@ -98,6 +103,9 @@ return {
         git_files = {
           theme = "dropdown",
         },
+        -- git_bcommits = {
+        --   theme = "dropdown",
+        -- },
       },
       -- defaults = {
       --   mappings = {
@@ -107,6 +115,10 @@ return {
       --     },
       --   },
     })
+
+    local builtin = require("telescope.builtin")
+
+    vim.keymap.set("n", "<leader>gd", builtin.git_bcommits, { silent = true, desc = "Shiiiz" })
 
     -- Enable telescope fzf native, if installed
     pcall(telescope.load_extension, "fzf")
